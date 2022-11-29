@@ -5,6 +5,7 @@ import DashboardLayout from '../Layout/DashboardLayout/DashboardLayout';
 import Main from "../Layout/Main/Main";
 import AllAvailablsProduts from '../Pages/AllAvailablsProduts/AllAvailablsProduts';
 import AllUser from '../Pages/AllUser/AllUser';
+import Blog from '../Pages/Blog/Blog';
 import AddProducts from '../Pages/DashBoardAll/AddProducts/AddProducts';
 import MyAllProducts from '../Pages/DashBoardAll/MyAllProducts/MyAllProducts';
 import MyOrders from '../Pages/DashBoardAll/MyOrders/MyOrders';
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
             {
                 path: '*',
                 element: <PaseError></PaseError>
+            },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
             },
             {
                 path: '/login',

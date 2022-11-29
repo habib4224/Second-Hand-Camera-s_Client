@@ -1,3 +1,37 @@
+
+
+Project Name: Second-Hand Camera's!
+Project Link: 
+
+
+Features:
+1. In home section navbar, catagories of available Camra, about section and a footer.
+2. In Catagory section you can see all the available Camera .
+3. particular catagory, Private. User Must be Login
+5. In blog section basic knowledge of web related.
+
+Technologies used for this project:
+
+1. I have used cors.
+2. I have used firebase.
+3. I have used vercel.
+4. I have used express js.
+5. I have used Tailwind.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

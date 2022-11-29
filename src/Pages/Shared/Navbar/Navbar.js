@@ -22,7 +22,7 @@ const Navbar = () => {
     }
     const navberItem = <React.Fragment>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/blogs'>Blogs</Link></li>
+        <li><Link to='/blog'>Blogs</Link></li>
         {user?.uid ?
             <>
                 <li><Link to='/dashboard'>Dashboard</Link></li>
@@ -43,7 +43,7 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <Link to='/' className="btn hidden lg:flex btn-ghost normal-case text-xl"> <span><img src={im1} alt="" className=' mask mask-squircle w-5 h-5' /></span> Value Your Camera's</Link>
+                <Link to='/' className="btn hidden lg:flex btn-ghost normal-case text-xl"> <span><img src={im1} alt="" className=' mask mask-squircle w-5 h-5' /></span> Second-Hand Camera's</Link>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

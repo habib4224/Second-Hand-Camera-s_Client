@@ -9,16 +9,16 @@ const EachCatagori = ({ subCategory, setModalDetails }) => {
 
             <div className="card-body">
                 <h2 className="card-title text center font-bold text-info text-center"><h1>{Product_Name}</h1></h2>
-                <p className='text-blue-600'>Seller Name: <span className='text-black'>{name}</span></p>
-                <p className='text-blue-600'>Product Name:<span className='text-black'>{Product_Name}</span> </p>
-                <p className='text-blue-600'>Location:<span className='text-black'>{Location}</span> </p>
-                <p className='text-blue-600'>Original Price: <span className='text-black'>{Original_Price}</span> </p>
-                <p className='text-blue-600'>Resell Price:<span className='text-black'>{Resell_Price}</span> </p>
-                <p className='text-blue-600'>Years of Use:<span className='text-black'>{Years_of_Use}</span> </p>
-                <p className='text-blue-600'>Seller Email:<span className='text-black'>{email}</span> </p>
+                <p className='text-blue-900'>Seller Name: <span className='text-black'>{name}</span></p>
+                <p className='text-blue-900'>Product Name:<span className='text-black'>{Product_Name}</span> </p>
+                <p className='text-blue-900'>Location:<span className='text-black'>{Location}</span> </p>
+                <p className='text-blue-900'>Original Price: <span className='text-black'>{Original_Price}</span> </p>
+                <p className='text-blue-900'>Resell Price:<span className='text-black'>{Resell_Price}</span> </p>
+                <p className='text-blue-900'>Years of Use:<span className='text-black'>{Years_of_Use}</span> </p>
+                <p className='text-blue-900'>Seller Email:<span className='text-black'>{email}</span> </p>
 
                 <div className="card-actions">
-                    <label onClick={() => setModalDetails(subCategory)} htmlFor="Booking-modal" className="btn w-full btn-info">Buy Now</label>
+                    <label onClick={() => setModalDetails(subCategory)} htmlFor="Booking-modal" className="btn w-full btn-primary">Buy Now</label>
                 </div>
             </div>
         </div>

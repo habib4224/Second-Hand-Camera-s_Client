@@ -17,8 +17,8 @@ const EachCatagori = ({ subCategory, setModalDetails }) => {
                 <p className='text-blue-600'>Years of Use:<span className='text-black'>{Years_of_Use}</span> </p>
                 <p className='text-blue-600'>Seller Email:<span className='text-black'>{email}</span> </p>
 
-                <div className="card-actions justify-Center">
-                    <label onClick={() => setModalDetails(subCategory)} htmlFor="Booking-modal" className="btn btn-info">Buy Now</label>
+                <div className="card-actions">
+                    <label onClick={() => setModalDetails(subCategory)} htmlFor="Booking-modal" className="btn w-full btn-info">Buy Now</label>
                 </div>
             </div>
         </div>

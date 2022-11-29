@@ -4,7 +4,7 @@ import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import AdminHook from '../../../Context/Hooks/AdminHook';
 import BuyerHook from '../../../Context/Hooks/BuyerHook';
 import SellerHook from '../../../Context/Hooks/SellerHook';
-
+import im1 from '../../../Sources/favicon.svg'
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
     const [isAdmin] = AdminHook(user?.email);
@@ -42,6 +42,7 @@ const Navbar = () => {
                         {navberItem}
                     </ul>
                 </div>
+                <img src={im1} alt="" className=' mask mask-squircle w-7 h-7' />
                 <Link to='/' className="btn hidden lg:flex btn-ghost normal-case text-xl">Value Your Product</Link>
             </div>
             <div className="navbar-end hidden lg:flex">

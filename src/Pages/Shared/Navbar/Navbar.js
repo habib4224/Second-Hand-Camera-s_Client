@@ -42,8 +42,8 @@ const Navbar = () => {
                         {navberItem}
                     </ul>
                 </div>
-                <img src={im1} alt="" className=' mask mask-squircle w-7 h-7' />
-                <Link to='/' className="btn hidden lg:flex btn-ghost normal-case text-xl">Value Your Product</Link>
+
+                <Link to='/' className="btn hidden lg:flex btn-ghost normal-case text-xl"> <span><img src={im1} alt="" className=' mask mask-squircle w-5 h-5' /></span> Value Your Camera's</Link>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

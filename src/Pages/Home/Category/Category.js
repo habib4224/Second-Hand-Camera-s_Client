@@ -21,7 +21,7 @@ const Category = () => {
     return (
         <div>
             <div className='m-6 font-bold text-center'>
-                <h1 className='text-6xl'> ALl Available Categories: {datas.length}</h1>
+                <h1 className='text-6xl'> ALl Available Camera Categories: {datas.length}</h1>
             </div>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 {

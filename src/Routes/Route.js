@@ -12,6 +12,7 @@ import EachCatagories from '../Pages/EachCatagories/EachCatagories';
 import Home from '../Pages/Home/Home';
 import Login from '../Pages/Login/Login';
 import Registration from '../Pages/Registration/Registration';
+import PaseError from '../Pages/Shared/PaseError/PaseError';
 import AdminRoute from './AdminRoute/AdminRoute';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: '*',
+                element: <PaseError></PaseError>
             },
             {
                 path: '/login',

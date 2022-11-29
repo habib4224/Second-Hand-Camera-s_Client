@@ -6,7 +6,7 @@ const SingleFromAll = (each) => {
 
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl ">
-            <figure><img src={img} alt="Shoes" /></figure>
+            <figure className='h-1/2'><img src={img} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{Brand_name}</h2>
                 <p>Seller:{name}</p>
@@ -17,7 +17,7 @@ const SingleFromAll = (each) => {
                 <p>Seller Email: {email}</p>
             </div>
             <div className="card-actions justify-center">
-                <button className="btn btn-primary">See All Camera</button>
+                <button className="w-full btn btn-primary">See All Camera</button>
             </div>
         </div>
     );

@@ -33,7 +33,7 @@ const Category = () => {
                 }
 
             </div>
-            <div className='mt-6'> <Link to='/allavailableproducts'><button className='w-full btn btn-primary'>See All Camera</button></Link></div>
+            <div className='my-8'> <Link to='/allavailableproducts'><button className='w-full btn btn-primary'>See All Camera</button></Link></div>
         </div>
     );
 };

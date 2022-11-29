@@ -5,7 +5,7 @@ const EachCatagori = ({ subCategory, setModalDetails }) => {
     const { Product_Name, img, name, Location, Original_Price, Resell_Price, Years_of_Use, email } = subCategory;
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl ">
-            <figure><img src={img} alt="Shoes" /></figure>
+            <figure className='h-1/2'><img src={img} alt="Shoes" /></figure>
 
             <div className="card-body">
                 <h2 className="card-title text center font-bold text-info text-center"><h1>{Product_Name}</h1></h2>

@@ -1,5 +1,6 @@
 
-
+Admin Email:(admin@admin.com)
+Admin Passward: (aaaaaa)
 Project Name: Second-Hand Camera's!
 Project Link: https://value-your-product.web.app/
 gitHub Link:

@@ -5,29 +5,23 @@ import { useLoaderData } from 'react-router-dom';
 import ModalConfirmation from '../../Shared/ModalConfirmation/ModalConfirmation';
 
 const MyAllProducts = () => {
-
-
     const data = useLoaderData();
-    console.log(data)
-
     const [deleteProduct, setDeleteProduct] = useState(null);
     const closeModal = () => {
         setDeleteProduct(null);
     }
 
     const handleDelete = id => {
-        fetch(`http://localhost:5000/allProducts/${id}`, {
+        fetch(`https://reselling-your-camera-server.vercel.app/allProducts/${id}`, {
             method: 'DELETE',
 
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 toast.success('Your Product Deleted!');
 
             })
     }
-    console.log(data);
     return (
         <div>
             <h3 className="text-3xl mb-5">My All Products</h3>

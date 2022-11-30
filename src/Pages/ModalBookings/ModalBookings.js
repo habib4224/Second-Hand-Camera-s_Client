@@ -26,7 +26,7 @@ const ModalBookings = ({ modaldetails, setModalDetails }) => {
             meeting
         }
 
-        fetch('http://localhost:5000/myOrders', {
+        fetch('https://reselling-your-camera-server.vercel.app/myOrders', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -35,7 +35,6 @@ const ModalBookings = ({ modaldetails, setModalDetails }) => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 if (data.acknowledged) {
                     setModalDetails(null);
                     toast.success('Your order placed successfully')

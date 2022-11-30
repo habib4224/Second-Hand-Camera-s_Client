@@ -13,7 +13,6 @@ const Login = () => {
     const from = location.state?.from?.pathname || '/';
 
     const handleLogin = data => {
-        console.log(data);
         setLoginError('');
         logIn(data.email, data.password)
             .then(result => {
@@ -22,8 +21,6 @@ const Login = () => {
                 Navigate(from, { replace: true });
             })
             .catch(error => {
-
-                console.log(error.message)
                 setLoginError(error.message)
             });
     }

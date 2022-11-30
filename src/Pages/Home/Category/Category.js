@@ -8,13 +8,13 @@ const Category = () => {
 
     const { data: datas = [] } = useQuery({
         queryKey: ['allCategory'],
-        queryFn: () => fetch('http://localhost:5000/allCategory')
+        queryFn: () => fetch('https://reselling-your-camera-server.vercel.app/allCategory')
             .then(res => res.json())
     });
 
-    const { data: datasall = [] } = useQuery({
+    const { data: dataAll = [] } = useQuery({
         queryKey: ['allProducts'],
-        queryFn: () => fetch('http://localhost:5000/allProducts')
+        queryFn: () => fetch('https://reselling-your-camera-server.vercel.app/allProducts')
             .then(res => res.json())
     });
 

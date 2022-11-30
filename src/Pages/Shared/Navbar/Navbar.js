@@ -1,24 +1,13 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
-import AdminHook from '../../../Context/Hooks/AdminHook';
-import BuyerHook from '../../../Context/Hooks/BuyerHook';
-import SellerHook from '../../../Context/Hooks/SellerHook';
 import im1 from '../../../Sources/favicon.svg'
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
-    const [isAdmin] = AdminHook(user?.email);
-    const [isSeller] = SellerHook(user?.email);
-    const [isBuyer] = BuyerHook(user?.email);
-
-    console.log("admin", isAdmin);
-    console.log("seller", isSeller);
-    console.log("Buyer", isBuyer);
-
     const handleLogOut = () => {
         logOut()
             .then(() => { })
-            .catch(error => console.log(error));
+            .catch(error => console.error(error));
     }
     const navberItem = <React.Fragment>
         <li><Link to='/'>Home</Link></li>

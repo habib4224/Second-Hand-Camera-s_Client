@@ -1,13 +1,13 @@
 import React from 'react';
 
 const SingleFromAll = ({ each, setModalDetails }) => {
-    const { img, Brand_name, name, Location, Original_Price, Resell_Price, Years_of_Use, email, } = each;
+    const { img, name, Location, Original_Price, Resell_Price, Years_of_Use, Product_Name, email, } = each;
 
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl ">
             <figure className='h-1/2'><img src={img} alt="Shoes" /></figure>
             <div className="card-body">
-                <h2 className="card-title">{Brand_name}</h2>
+                <h2 className="card-title text center font-bold text-primary text-center"><h1>{Product_Name}</h1></h2>
                 <p>Seller:{name}</p>
                 <p>Location: {Location}</p>
                 <p>Original Price: {Original_Price}</p>

@@ -49,7 +49,7 @@ const router = createBrowserRouter([
             {
                 path: '/allProducts/:id',
                 element: <PrivateRoute><EachCatagories></EachCatagories></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/allProducts/${params.id}`)
+                loader: ({ params }) => fetch(`https://reselling-your-camera-server.vercel.app/allProducts/${params.id}`)
             }
         ]
     },
@@ -68,7 +68,7 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/allProducts/:email',
                 element: <MyAllProducts></MyAllProducts>,
-                loader: ({ params }) => fetch(`http://localhost:5000/allProducts/${params.email}`)
+                loader: ({ params }) => fetch(`https://reselling-your-camera-server.vercel.app/allProducts/${params.email}`)
             },
 
             {

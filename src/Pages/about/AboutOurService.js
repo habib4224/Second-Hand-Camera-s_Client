@@ -7,7 +7,7 @@ const AboutOurService = () => {
             <div className="hero-overlay bg-opacity-80"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-md">
-                    <h1 className="mb-5 text-5xl text-primary  font-bold">About Us</h1>
+                    <h1 className="mb-5 text-5xl text-primary  font-bold">About Our Company</h1>
                     <p className="mb-5 text-lg">We're Camera People. The original curator and reseller of rare and quality camera gear we  always envisioned a better way to support the passion and profession of photography.</p>
                     <Link to={'/'}><button className="btn btn-primary">Read More</button></Link>
                 </div>

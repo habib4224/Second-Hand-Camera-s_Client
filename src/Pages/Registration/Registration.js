@@ -16,7 +16,6 @@ const Registration = () => {
     const [registrationError, setRegistrationError] = useState('')
 
     const handleRegistration = (data) => {
-        console.log(data);
         setRegistrationError('');
         createUser(data.email, data.password)
             .then(result => {
@@ -32,10 +31,9 @@ const Registration = () => {
                         saveUser(data.name, data.email, data.type);
 
                     })
-                    .catch(error => console.log(error));
+                    .catch(error => console.error(error));
             })
             .catch(error => {
-                console.log(error)
                 setRegistrationError(error.message)
 
             });
@@ -43,7 +41,7 @@ const Registration = () => {
 
     const saveUser = (name, email, type) => {
         const user = { name, email, type };
-        fetch('http://localhost:5000/users', {
+        fetch('https://reselling-your-camera-server.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -58,7 +56,7 @@ const Registration = () => {
     }
 
     const getUserToken = email => {
-        fetch(`http://localhost:5000/jwt?email=${email}`)
+        fetch(`https://reselling-your-camera-server.vercel.app/jwt?email=${email}`)
             .then(res => res.json())
             .then(data => {
                 if (data.accessToken) {

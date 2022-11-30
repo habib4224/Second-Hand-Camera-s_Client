@@ -15,7 +15,7 @@ const AddProducts = () => {
 
         queryKey: ['Catagory'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/brands`);
+            const res = await fetch(`https://reselling-your-camera-server.vercel.app/brands`);
             const data = await res.json();
             return data;
         }
@@ -38,8 +38,7 @@ const AddProducts = () => {
             Condition_Type: data.Condition_Type,
 
         }
-        console.log(product);
-        fetch('http://localhost:5000/allProducts',
+        fetch('https://reselling-your-camera-server.vercel.app/allProducts',
             {
                 method: 'POST',
                 headers: {
@@ -49,7 +48,7 @@ const AddProducts = () => {
             })
             .then(res => res.json())
             .then(result => {
-                console.log(result);
+
                 toast.success('Your product added successfully');
                 navigates(`/dashboard/allProducts/${product.email}`)
                 refetch();

@@ -6,7 +6,6 @@ import EachCatagori from './EachCatagori';
 const EachCatagories = () => {
     const data = useLoaderData();
     const [modaldetails, setModalDetails] = useState(null);
-    console.log("Eta brand name ", data);
     return (
         <div>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>

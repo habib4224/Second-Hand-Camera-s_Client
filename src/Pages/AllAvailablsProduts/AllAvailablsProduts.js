@@ -8,7 +8,7 @@ const AllAvailablsProduts = () => {
 
     const { data: datas = [] } = useQuery({
         queryKey: ['allProducts'],
-        queryFn: () => fetch('http://localhost:5000/allProducts')
+        queryFn: () => fetch('https://reselling-your-camera-server.vercel.app/allProducts')
             .then(res => res.json())
     });
     const [modaldetails, setModalDetails] = useState(null);

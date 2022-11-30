@@ -12,20 +12,19 @@ const AllUser = () => {
     const { data: users = [], refetch } = useQuery({
         queryKey: ['users'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/users');
+            const res = await fetch('https://reselling-your-camera-server.vercel.app/users');
             const data = await res.json();
             return data;
         }
     });
 
     const handleDelete = user => {
-        fetch(`http://localhost:5000/users/${user._id}`, {
+        fetch(`https://reselling-your-camera-server.vercel.app/users/${user._id}`, {
             method: 'DELETE',
 
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 toast('User Deleted');
                 refetch();
             })
